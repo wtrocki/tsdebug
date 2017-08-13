@@ -1,7 +1,7 @@
-import {Base, BaseClass} from 'ts-module';
+import {BaseClass } from 'ts-module';
 
 const usage = new BaseClass();
 
-usage.foo('bluebird').then(function(msg){
+usage.foo('bluebird').then(function(msg) {
     console.info(msg);
 })
