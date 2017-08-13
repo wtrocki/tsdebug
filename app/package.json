@@ -1,0 +1,33 @@
+{
+  "name": "example-app",
+  "version": "1.0.0",
+  "description": "",
+  "types": "src/index.ts",
+  "author": "wtrocki@redhat.com",
+  "license": "Apache-2.0",
+  "main": "src/",
+  "scripts": {
+    "clean": "del src/**/*.js src/**/*.map test/**/*.js test/**/*.map",
+    "build": "tsc"
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ]
+  },
+  "devDependencies": {
+    "del-cli": "^1.0.0",
+    "source-map-support": "^0.4.15",
+    "ts-node": "^3.0.4",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "ts-bluebird-module": "1.0.0"
+  }
+}
